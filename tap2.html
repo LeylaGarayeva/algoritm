@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Heftenin gununu oyrenmek ucun duymeye click edin</p>
+
+<button onclick="myFunction()">Click</button>
+
+<p id="view"></p>
+
+<script>
+function myFunction() {
+    var wday = prompt("Heftenin gununu reqemle daxil et");
+    if (wday ==1 ) {
+        document.getElementById("view").innerHTML =
+        "bazar ertesidir";
+    }
+    else if  (wday ==2 ) {
+        document.getElementById("view").innerHTML =
+        "cersenbe axsami";
+    }
+     else if  (wday ==3 ) {
+        document.getElementById("view").innerHTML =
+        "cersenbe";
+    }
+
+       else if  (wday ==4 ) {
+        document.getElementById("view").innerHTML =
+        "cume axsami";
+    }
+       else if  (wday ==5 ) {
+        document.getElementById("view").innerHTML =
+        "cume";
+    }
+        else if  (wday ==6 ) {
+        document.getElementById("view").innerHTML =
+        "senbe";
+    }
+        else if  (wday ==7 ) {
+        document.getElementById("view").innerHTML =
+        "bazar";
+    }
+    else{
+    	 document.getElementById("view").innerHTML =
+        "Heftenin bele gunu yoxdur";
+    }
+
+}
+</script>
+
+</body>
+</html>
